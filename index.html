@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Replace piles of khata notebooks with one simple digital khata for customer credit, payments, balances, and transaction history." />
+    <title>Hisab | Your digital khata</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="images/Favicon.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="images/Favicon Light.png" media="(prefers-color-scheme: light)" />
+    <link rel="apple-touch-icon" sizes="512x512" href="images/App Icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="Hisab home"><img src="images/Logo.png" alt="Hisab, Every number has a place" width="1130" height="350" /></a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="#about">About</a><a href="#features">Features</a><a href="#how-it-works">How it works</a><a href="#pricing">Pricing</a>
+        </nav>
+        <div class="nav-actions">
+          <span class="login-placeholder" aria-disabled="true" aria-label="Log in unavailable until the Hisab app route is connected" title="Available when the Hisab app route is connected">Log in</span>
+          <a class="button button-small" href="#pricing">Get started </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-grid dhaka-textile" id="top">
+        <div class="hero-copy">
+          <h1>A digital Khata<br /><span>for your <span class="hero-mobile-next-line">growing business.</span></span></h1>
+          <p class="hero-description">Say no to notebook khatas.</p>
+          <div class="hero-actions"><a class="button" href="#pricing">Start Your Digital Khata </a></div>
+        </div>
+        <div class="hero-visual" aria-label="Illustrative Hisab business dashboard preview">
+          <div class="jhyal-halo" aria-hidden="true"><span class="jhyal-arch"></span><span class="jhyal-lattice"></span><span class="jhyal-rosette"></span></div>
+          <div class="app-window">
+            <aside class="app-sidebar">
+              <div class="app-brand"><img class="brand-symbol" src="images/Mini Logo.png" alt="" /><span>hisab</span></div>
+              <div class="business-switch"><span class="business-avatar">A</span><span><b>Arun Traders</b><small>Business account</small></span><span class="chevron">⌄</span></div>
+              <div class="sidebar-label">WORKSPACE</div>
+              <a class="side-link selected" href="#features"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2.5" y="2.5" width="6" height="6"/><rect x="11.5" y="2.5" width="6" height="6"/><rect x="2.5" y="11.5" width="6" height="6"/><rect x="11.5" y="11.5" width="6" height="6"/></svg>Overview</a>
+              <a class="side-link" href="#features"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="7" cy="6" r="3"/><path d="M2 17v-1a5 5 0 0 1 10 0v1M14 4a3 3 0 0 1 0 6M15 12a4 4 0 0 1 3 4v1"/></svg>People</a>
+              <a class="side-link" href="#features"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 3.5h12v13H4zM7 7h6M7 10h6M7 13h3"/></svg>Transactions</a>
+              <a class="side-link" href="#features"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 16.5V10m7 6.5V4m7 12.5V7"/></svg>Reports</a>
+              <div class="sidebar-bottom"><span class="avatar avatar-blue">AS</span><span><b>Account owner</b><small>Arun Traders</small></span></div>
+            </aside>
+            <div class="app-main">
+              <div class="app-topline"><span>Overview</span><span class="sample-tag">Illustrative data</span><span class="app-date">This month <span aria-hidden="true">⌄</span></span></div>
+              <div class="app-heading"><div><span class="app-greeting">Good morning, Arun</span><h2>Your business</h2></div><span class="add-entry" aria-hidden="true">＋ <span>Add transaction</span></span></div>
+              <div class="dashboard-kpis">
+                <article class="dashboard-kpi"><span>To receive</span><strong>Rs 1,24,500</strong><small><i class="status-dot receive"></i>18 customer accounts</small></article>
+                <article class="dashboard-kpi"><span>To pay</span><strong>Rs 48,200</strong><small><i class="status-dot pay"></i>6 supplier accounts</small></article>
+                <article class="dashboard-kpi"><span>Collected this month</span><strong>Rs 86,300</strong><small><i class="status-dot receive"></i>Payments received</small></article>
+                <article class="dashboard-kpi"><span>Entries this month</span><strong>36</strong><small>Credit, debit &amp; payments</small></article>
+              </div>
+              <div class="dashboard-grid">
+                <div class="dashboard-column dashboard-primary">
+                  <section class="dashboard-card balance-chart">
+                    <div class="dashboard-card-heading"><div><h3>Balance overview</h3><p>Receivables across the last 30 days</p></div><span class="chart-period">30 days⌄</span></div>
+                    <div class="chart-legend"><span><i class="legend-receive"></i>To receive</span><span><i class="legend-pay"></i>To pay</span></div>
+                    <div class="balance-plot" role="img" aria-label="Illustrative line chart showing receivables and payables over the last 30 days">
+                      <div class="chart-y-labels"><span>Rs 1.5L</span><span>Rs 1.0L</span><span>Rs 50K</span><span>Rs 0</span></div>
+                      <svg viewBox="0 0 720 210" preserveAspectRatio="none" aria-hidden="true"><path class="chart-gridline" d="M0 20H720M0 76H720M0 132H720M0 188H720"/><path class="chart-area" d="M0 145 C35 136 50 148 82 128 S130 130 164 112 S214 126 250 96 S301 106 336 85 S385 105 421 74 S471 80 506 64 S554 84 591 52 S645 68 680 30 S704 40 720 22 V190 H0Z"/><path class="chart-line receive-chart-line" d="M0 145 C35 136 50 148 82 128 S130 130 164 112 S214 126 250 96 S301 106 336 85 S385 105 421 74 S471 80 506 64 S554 84 591 52 S645 68 680 30 S704 40 720 22"/><path class="chart-line pay-chart-line" d="M0 164 C30 158 62 167 91 154 S145 158 180 147 S238 158 270 138 S328 145 359 132 S420 142 452 123 S505 135 538 119 S590 127 620 111 S680 120 720 102"/><circle class="chart-point" cx="506" cy="64" r="5"/></svg>
+                      <div class="chart-x-labels"><span>1 Oct</span><span>8 Oct</span><span>15 Oct</span><span>22 Oct</span><span>30 Oct</span></div>
+                    </div>
+                  </section>
+                  <section class="dashboard-card transactions-card">
+                    <div class="dashboard-card-heading"><div><h3>Recent transactions</h3><p>The latest account entries</p></div><a href="#features">View all </a></div>
+                    <div class="dashboard-table">
+                      <div class="dashboard-table-row dashboard-table-header"><span>PERSON</span><span>ENTRY</span><span class="activity-date">DATE</span><span>AMOUNT</span></div>
+                      <div class="dashboard-table-row"><span class="dashboard-person"><i class="avatar avatar-rose">RS</i><b>Ramesh Store</b></span><span><i class="type-dot credit"></i>Credit</span><span class="activity-date">Today</span><strong>+ Rs 12,500</strong></div>
+                      <div class="dashboard-table-row"><span class="dashboard-person"><i class="avatar avatar-gold">MG</i><b>Meera General</b></span><span><i class="type-dot payment"></i>Payment</span><span class="activity-date">Yesterday</span><strong>− Rs 8,000</strong></div>
+                      <div class="dashboard-table-row"><span class="dashboard-person"><i class="avatar avatar-green">SS</i><b>Sunrise Supplies</b></span><span><i class="type-dot debit"></i>Debit</span><span class="activity-date">Oct 24</span><strong>+ Rs 6,400</strong></div>
+                    </div>
+                  </section>
+                </div>
+                <div class="dashboard-column dashboard-secondary">
+                  <section class="dashboard-card balances-card">
+                    <div class="dashboard-card-heading"><div><h3>Customer balances</h3><p>Accounts with a balance due</p></div><a href="#features" aria-label="See customer features">···</a></div>
+                    <div class="balance-person"><i class="avatar avatar-rose">RS</i><span><b>Ramesh Store</b><small>Due from customer</small></span><strong>Rs 12,500</strong></div>
+                    <div class="balance-person"><i class="avatar avatar-gold">MG</i><span><b>Meera General</b><small>Due from customer</small></span><strong>Rs 8,000</strong></div>
+                    <div class="balance-person"><i class="avatar avatar-green">SS</i><span><b>Sunrise Supplies</b><small>Due to supplier</small></span><strong class="payable-amount">Rs 6,400</strong></div>
+                    <div class="balance-card-footer"><span>Illustrative customer and supplier balances</span></div>
+                  </section>
+                  <section class="dashboard-card payment-activity">
+                    <div class="dashboard-card-heading"><div><h3>Payment activity</h3><p>Payments recorded this week</p></div><span class="activity-menu">···</span></div>
+                    <div class="week-bars" role="img" aria-label="Illustrative payment activity by day of the week">
+                      <div><i style="--bar:48%"></i><span>Sun</span></div><div><i style="--bar:64%"></i><span>Mon</span></div><div class="active-day"><i style="--bar:88%"></i><span>Tue</span></div><div><i style="--bar:58%"></i><span>Wed</span></div><div><i style="--bar:39%"></i><span>Thu</span></div><div><i style="--bar:69%"></i><span>Fri</span></div><div><i style="--bar:78%"></i><span>Sat</span></div>
+                    </div>
+                    <div class="payment-total"><span>Total recorded</span><strong>Rs 24,600</strong></div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clarity section-grid dhaka-textile" id="about">
+        
+        <div class="clarity-intro"><h2>Your business has grown. Your notebooks shouldn’t keep growing with it.</h2><p>Credit sales, payments, and customer balances spread across khata books make old entries hard to find. Hisab keeps each customer’s account and history together in one digital place.</p></div>
+        <div class="khata-transition" aria-label="Illustrative comparison: searching through a paper khata and viewing a customer account in Hisab">
+          <div class="old-khata reveal">
+            <div class="khata-paper-scene" aria-hidden="true">
+              <div class="khata-book khata-book-back"><span>KHATA</span><i></i><i></i><i></i><i></i></div>
+              <div class="khata-book khata-book-middle"><span>ACCOUNTS</span><i></i><i></i><i></i><i></i></div>
+              <div class="khata-book khata-book-front"><span class="khata-title-nepali">हिसाब</span><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="old-khata-copy"><h3>Find the right page first.</h3><ol><li>Search through old entries</li><li>Check if a payment was written down</li><li>Calculate the balance again</li></ol></div>
+          </div>
+          <div class="khata-bridge" aria-hidden="true"><span></span><svg viewBox="0 0 32 16"><path d="M1 8h27M22 2l6 6-6 6" /></svg></div>
+          <div class="digital-khata reveal" role="img" aria-label="Illustrative Hisab customer khata for Ramesh Store, showing a rupees 12,500 outstanding balance and credit and payment entries">
+            <div class="digital-khata-bar"><span class="digital-khata-brand"><img src="images/Mini Logo.png" alt="" /> hisab</span><span>Customer khata</span><span class="sample-tag">Illustrative data</span></div>
+            <div class="khata-search"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"></circle><path d="m13 13 4 4"></path></svg><span>Ramesh Store</span><small>Customer</small></div>
+            <div class="customer-account">
+              <div class="customer-account-heading"><div><small>Customer account</small><h3>Ramesh Store</h3></div><span class="customer-initials">RS</span></div>
+              <div class="customer-due"><span><b>Baaki</b> · Outstanding balance</span><strong>Rs 12,500</strong></div>
+              <div class="account-history-heading"><b>Account history</b><span>All entries</span></div>
+              <div class="khata-entry"><span class="entry-mark entry-payment">−</span><span><b>Jamma · Payment received</b><small>Cash payment · 26 Oct</small></span><strong>− Rs 8,000</strong></div>
+              <div class="khata-entry"><span class="entry-mark entry-credit">+</span><span><b>Udharo · Credit</b><small>Goods supplied · 24 Oct</small></span><strong>+ Rs 20,500</strong></div>
+              <div class="record-payment-row"><span><b>Record a new Jamma</b><small>Add a payment to this account</small></span><span class="record-payment-button"><i aria-hidden="true">+</i> Record payment</span></div>
+              <div class="digital-khata-foot"><span>Entries kept with this customer</span><span>View history </span></div>
+            </div>
+          </div>
+        </div>
+        <div class="clarity-end"><span class="ledger-thread"></span><p>Search a customer. See their Baaki. Open every credit and payment entry without opening another notebook.</p></div>
+      </section>
+
+      <section class="features section-grid dhaka-textile" id="features">
+        <span class="heritage-window heritage-window-feature" aria-hidden="true"></span>
+        
+        <div class="section-heading"><h2>Customer accounts,<br /><span>easy to find.</span></h2><p>Keep customer and supplier records, Udharo, Jamma, and Baaki together, so you can answer everyday account questions without searching through books.</p></div>
+        <div class="feature-ledger">
+          <article class="feature-row feature-people">
+            <div class="feature-copy"><h3>Find any customer’s Hisab without opening a notebook.</h3><p>Search for a customer to see their account, outstanding balance, and transaction history together.</p><a class="under-link" href="#how-it-works">See how it works </a></div>
+            <div class="people-preview product-paper"><div class="preview-head"><div><span class="preview-label">CUSTOMER KHATA</span><h4>Customers &amp; suppliers</h4></div><span class="preview-action">Illustrative list</span></div><div class="people-list"><div class="person-row"><span class="avatar avatar-rose">RS</span><span class="person-name"><b>Ramesh Store</b><small>Customer · Baaki</small></span><span class="person-balance"><small>Outstanding</small><b>Rs 12,500</b></span></div><div class="person-row"><span class="avatar avatar-gold">MG</span><span class="person-name"><b>Meera General</b><small>Customer · Baaki</small></span><span class="person-balance"><small>Outstanding</small><b>Rs 8,000</b></span></div><div class="person-row"><span class="avatar avatar-green">SS</span><span class="person-name"><b>Sunrise Supplies</b><small>Supplier · To pay</small></span><span class="person-balance"><small>Outstanding</small><b>Rs 6,400</b></span></div></div><span class="preview-foot">Illustrative customer and supplier accounts</span></div>
+          </article>
+          <article class="feature-row feature-transactions">
+            <div class="transaction-preview product-paper"><div class="preview-head"><div><span class="preview-label">ACCOUNT HISTORY</span><h4>Every entry, in context.</h4></div><span class="filter-select">Illustrative entries</span></div><div class="transaction-list"><div class="transaction-item"><span class="transaction-date">26<br /><small>OCT</small></span><span class="transaction-info"><b>Jamma · Payment received</b><small>Ramesh Store</small></span><span class="amount-neutral">− Rs 8,000</span></div><div class="transaction-item"><span class="transaction-date">24<br /><small>OCT</small></span><span class="transaction-info"><b>Udharo · Credit added</b><small>Ramesh Store</small></span><span class="amount-positive">+ Rs 20,500</span></div><div class="transaction-item"><span class="transaction-date">23<br /><small>OCT</small></span><span class="transaction-info"><b>Payment received</b><small>Meera General</small></span><span class="amount-neutral">− Rs 8,000</span></div></div><span class="preview-foot">Illustrative credit and payment history</span></div>
+            <div class="feature-copy"><h3>Never lose track of Udharo.</h3><p>Record credit, debit, and Jamma payments in the right customer or supplier account. Return to the full payment history when you need it.</p><a class="under-link" href="#how-it-works">See how it works </a></div>
+          </article>
+          <article class="feature-row feature-reports">
+            <div class="feature-copy"><h3>Know exactly who owes you money.</h3><p>See customer Baaki and supplier balances at a glance. Review account entries, prepare reports and PDF statements, and give employees access to shared business records.</p></div>
+            <div class="report-preview"><div class="report-top"><span>CUSTOMER ACCOUNT STATEMENT</span><span>PDF</span></div><div class="report-title">Ramesh Store<small>Illustrative account statement</small></div><div class="report-lines"><span>Udharo · Credit <b>Rs 20,500</b></span><span>Jamma · Payments <b>− Rs 8,000</b></span><span>Entries recorded <b>2</b></span></div><div class="report-total"><span>Baaki · Outstanding</span><b>Rs 12,500</b></div></div>
+          </article>
+        </div>
+        
+      </section>
+
+      <section class="how section-grid dhaka-textile" id="how-it-works">
+        <span class="heritage-window heritage-window-how" aria-hidden="true"></span>
+        
+        <div class="how-heading"><h2>Move your khata<br />one step at a time.</h2><p>Start with the customer accounts you already keep. Add new entries as business happens.</p></div>
+        <div class="steps">
+          <article class="step"><span class="step-no">01</span><div class="step-rule"></div><h3>Create your business account.</h3><p>Set up Hisab as the digital place for your business khata.</p></article>
+          <article class="step"><span class="step-no">02</span><div class="step-rule"></div><h3>Add your customers and suppliers.</h3><p>Give each account a clear place for its balances and entries.</p></article>
+          <article class="step"><span class="step-no">03</span><div class="step-rule"></div><h3>Record Udharo and Jamma.</h3><p>Check the Baaki and find the full customer history whenever you need it.</p></article>
+        </div>
+      </section>
+
+      <section class="businesses section-grid dhaka-textile">
+        <span class="heritage-window heritage-window-business" aria-hidden="true"></span>
+        
+        <div class="business-copy"><h2>A digital khata<br />for growing trade.</h2><p>Made for businesses in Nepal that track customer credit and payments account by account, without needing to be accounting experts.</p></div>
+        <div class="business-list"><div><span>01</span><b>Suppliers &amp; wholesalers</b><small>Keep customer balances and payment records together.</small></div><div><span>02</span><b>Distributors</b><small>Find account activity without searching through books.</small></div><div><span>03</span><b>Retail shops</b><small>See Udharo, Jamma, and Baaki for customers who buy on credit.</small></div><div><span>04</span><b>Small &amp; growing businesses</b><small>Keep customer and supplier accounts organized as they grow.</small></div></div>
+      </section>
+
+      <section class="pricing section-grid dhaka-textile" id="pricing">
+        
+        <div class="pricing-copy"><h2>Start your digital<br />khata for free.</h2><p>Hisab will offer a Free plan as the starting point for bringing customer accounts out of the notebook and into one simple digital place.</p></div>
+        <div class="free-panel"><svg class="panel-jhyal" viewBox="0 0 120 150" aria-hidden="true"><path d="M8 148V73C8 34 29 8 60 3c31 5 52 31 52 70v75M19 148V74c0-32 16-52 41-57 25 5 41 25 41 57v74"/><path d="M20 66h80M20 126h80M37 66v60m23-60v60m23-60v60M37 87h46M37 106h46M42 87l36 19M78 87l-36 19M44 66 60 39l16 27"/><circle cx="60" cy="24" r="7"/></svg><div class="free-top"><span>HISAB DIGITAL KHATA</span><span class="free-mark">FREE</span></div><h3>Start with Free.</h3><p>A simple way to begin keeping customer credit, payments, and balances digitally.</p><a class="button" href="#how-it-works">See How It Works </a></div>
+      </section>
+
+      <section class="final-cta dhaka-textile">
+        <div class="cta-grid"><div><h2>Bring your khata<br />into one clear place.</h2><p>Find customer balances, Udharo, Jamma, and past entries in one simple digital khata with Hisab.</p><a class="button button-light" href="#pricing">Start Your Digital Khata</a></div><div class="cta-ledger" aria-hidden="true"><svg class="jhyal-art" viewBox="0 0 260 320"><path class="jhyal-frame" d="M22 308V151C22 82 67 31 130 14c63 17 108 68 108 137v157M40 308V153c0-58 37-99 90-114 53 15 90 56 90 114v155"/><path class="jhyal-detail" d="M41 123h178M40 276h180M67 124v150m41-151v152m44-152v152m41-151v150M67 160h126M67 198h126M67 236h126M82 161l96 75m0-75-96 75M91 123l39-66 39 66M111 58h38M130 40v36"/><circle class="jhyal-rosette" cx="130" cy="40" r="13"/><path class="jhyal-detail" d="M130 27v26m-13-13h26m-22-9 18 18m0-18-18 18"/></svg></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main"><div class="footer-brand"><a class="brand" href="#top" aria-label="Hisab home"><img src="images/Logo.png" alt="Hisab, Every number has a place" width="1130" height="350" /></a><p>A simple digital khata for businesses that track customer credit, payments, and balances.</p></div><div class="footer-links"><div><b>Product</b><a href="#features">Customer khata</a><a href="#how-it-works">How it works</a><a href="#pricing">Pricing</a></div><div><b>Hisab</b><a href="#about">Why digital khata</a><a href="#top">Back to top</a></div></div></div>
+      <div class="footer-bottom"><span>© 2026 Hisab</span><span>Digital khata for everyday business.</span><span>हिसाब</span></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Copied design skill bundles (not Hisab source)
+/Skills/
+/~
+
+# Local visual QA captures
+/.qa-mobile.png
+/hisab-mobile-final.png
