@@ -106,9 +106,9 @@ button {
   gap:28px;
   font-size:13px
 }
-.login-placeholder {
+.login-link {
   color:#687487;
-  cursor:default
+  cursor:pointer
 }
 .button {
   min-height:50px;
@@ -1488,7 +1488,7 @@ button {
   margin-left:8px;
   gap:0
 }
-.login-placeholder {
+.login-link {
   display:none
 }
 .button-small {

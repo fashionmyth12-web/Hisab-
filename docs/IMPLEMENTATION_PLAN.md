@@ -58,6 +58,8 @@ This sequence preserves the existing marketing website and keeps the first produ
 
 ## Current status
 
-- Phase 0 audit documentation: drafted in this workspace.
-- Phase 1: not started. No Hisab development project is identified, Supabase CLI and Docker are absent, and the workspace has no Git repository or environment setup.
-- No migrations, database writes, or production connections have been made.
+- Phase 0: the marketing site and architecture were reviewed; the existing site is preserved and Git work is on a feature branch.
+- Phase 1: the Hisab organization and a healthy Supabase project exist, but the currently selected project is in Tokyo while Mumbai was selected for Nepal-first development. No migrations or app credentials are configured. Confirm the target region before connecting Auth or sending real verification emails.
+- Authentication: a separate React app is implemented under /app with Supabase Auth flows and route guards. Unit tests use mocked Auth actions; no hosted signup/reset emails were sent.
+- Encryption: Supabase documents encryption at rest for hosted database data and backups, and TLS in transit. Browser session tokens are not encrypted by Hisab; see SECURITY_REQUIREMENTS.md.
+- No database schema changes or migration writes have been made.

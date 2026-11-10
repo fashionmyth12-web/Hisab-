@@ -1,9 +1,11 @@
-import { createReadStream, statSync } from 'node:fs';
+import { createReadStream, existsSync, statSync } from 'node:fs';
 import { createServer } from 'node:http';
 import { extname, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(fileURLToPath(new URL('.', import.meta.url)));
+const buildRoot = resolve(root, 'dist');
+const publicRoot = existsSync(buildRoot) ? buildRoot : root;
 const mimeTypes = {
   '.css': 'text/css; charset=utf-8',
   '.html': 'text/html; charset=utf-8',
@@ -14,8 +16,9 @@ const mimeTypes = {
 
 const server = createServer((request, response) => {
   const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
-  const relativePath = pathname === '/' ? 'index.html' : pathname.slice(1);
-  const filePath = resolve(root, relativePath);
+  const isAppRoute = /^\/app(?:\/.*)?$/.test(pathname) && !/\.[^/]+$/.test(pathname);
+  const relativePath = isAppRoute ? 'app/index.html' : pathname === '/' ? 'index.html' : pathname.slice(1);
+  const filePath = resolve(publicRoot, relativePath);
 
   if (filePath !== root && !filePath.startsWith(`${root}${sep}`)) {
     response.writeHead(403).end('Forbidden');

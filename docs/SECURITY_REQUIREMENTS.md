@@ -37,6 +37,14 @@ These requirements apply before the product handles real business or financial d
 - Establish backups, recovery tests, retention, and incident response before production data is accepted.
 - Do not cache sensitive financial records for offline PWA use until local-device storage, encryption, logout, shared-device, and synchronization risks are reviewed.
 
+## Encryption and authentication sessions
+
+- **Confirmed from Supabase documentation:** Hosted Supabase encrypts database data and backups at rest with AES-256 and uses TLS 1.2 with modern cipher suites in transit. Project encryption keys are isolated per project and protected by HSMs. See [Supabase data residency and transfer safeguards](https://supabase.com/legal/privacy-resources/data-residency-and-transfers-faq).
+- **Confirmed from source:** The Hisab browser client uses a Supabase publishable key, PKCE flow, automatic access-token refresh, and Supabase-managed email/password Auth. It never writes passwords to application storage or database tables.
+- **Confirmed from Supabase documentation:** The browser Supabase client persists sessions in browser storage by default. That storage is not encrypted by Hisab; JavaScript running on the same origin can access it. A rich client needs session-token access, so client-side encryption with a key available to that JavaScript would not protect against XSS.
+- **Recommendation:** Use HTTPS for the deployed Hisab app, add a restrictive Content Security Policy and dependency controls before launch, and keep application data out of browser storage unless a separate offline-storage threat model is approved. Do not claim end-to-end encryption. If field-level encryption is later required, design key custody, recovery, search/report limitations, and mobile-client support first.
+- **Recommendation:** Configure Supabase Auth email confirmation, a server-enforced password length of at least 12 characters, production SMTP, and exact local/production redirect allowlists on the confirmed development project before live integration testing.
+
 ## Supabase implementation references
 
 - [Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security)
